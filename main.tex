@@ -1,0 +1,147 @@
+\documentclass[10pt,a4paper]{altacv}
+\PassOptionsToPackage{dvipsnames}{xcolor}
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm,footskip=2\baselineskip}
+
+% Change the font if you want to.
+% If using pdflatex:
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[default]{lato}
+
+% Change the colours if you want to
+\definecolor{LightBlue}{HTML}{0a66c2}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{DarkBlue}{HTML}{182d48}
+\definecolor{LightGrey}{HTML}{555555}
+\colorlet{heading}{DarkBlue}
+\colorlet{accent}{DarkBlue}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+\colorlet{linkcolor}{LightBlue}
+
+% Change the bullets for itemize and rating marker76
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+\usepackage[colorlinks, urlcolor=LightBlue]{hyperref}
+\usepackage{ragged2e}
+
+\begin{document}
+
+\name{Pablo Ezequiel Dietz}
+\tagline{Electronic Engineer}
+\photo{3.3cm}{photo.jpg}
+\qrcode{3.3cm}{qrcode.pdf}
+\personalinfo{
+    \begin{tabular}{l|l}
+        \email{\href{mailto:pablo.e.dietz@gmail.com}{pablo.e.dietz@gmail.com}} &
+        \github{\href{https://github.com/pablodietz}{github.com/pablodietz}} \\
+        \phone{+54 9 11 6238-7606} &
+        \linkedin{\href{https://www.linkedin.com/in/pablodietz}{linkedin.com/in/pablodietz}} \\
+        \location{Buenos Aires City, Argentina} &
+        \printinfo{\faSkype}{\href{https://join.skype.com/invite/EF9clOE0df6L}
+                                  {live:.cid.b5bf85d993e907f6}}
+  \end{tabular}
+}
+
+%% Make the header extend all the way to the right, if you want. 
+
+\begin{fullwidth}
+    \makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+%\AtBeginEnvironment{itemize}{\small}
+
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[sidebar]{Profile}
+%\medskip
+\justifying
+Experienced RF Design Engineer with a strong background in the aerospace industry. Specialized in RF electronic equipment design and analysis, with a focus on satellite communications. Passionate about Software Defined Radio (SDR) and its potential applications. Seeking new opportunities to leverage my expertise in RF design and contribute to innovative projects in the aerospace or telecommunications industry. Committed to continuous learning, problem-solving, and collaborative teamwork.
+
+%Electronic Engineer graduate at \href{http://www.fi.uba.ar/}{Buenos Aires University}, Argentina. During my studies I have acquired deep knowledge about semiconductor devices, telecommunications and RF applications.
+
+%Click on the links highlighted in blue to learn more about the centers where I had the opportunity to work and my mentors.
+
+%I joined a \href{https://csc.conicet.gov.ar/research/microwave-laboratory/}{research group} in October 2016 that was working on UWB systems. I was a member of the team designing a general purpose UWB transceiver. Within that group, I had the opportunity to work with RF circuit design experts, and be exposed to new design techniques. \\
+
+%Since August 2018 I have been working as modeling engineer at \href{https://www.allegromicro.com/}{Allegro Microsystems}, in one of the company’s R\&D teams, modeling semiconductors devices.
+
+%\bigskip
+\cvsection{Experience}
+%\smallskip
+\justifying
+
+\cvevent{\textbf{\href{https://www.invap.com.ar/en/aerospace/}{INVAP}}}{RF Design Engineer}{Aug 2021 -- \textbf{present}}{Bariloche, Argentina}
+\medskip
+\begin{itemize}
+    \item Design and analysis of RF electronic equipment
+    \item K/Ka-band Down/Up-converter design for SmallGeo SATCOM
+    \item Design of parallel coupled filter at Ka-band frequencies
+\end{itemize}
+\medskip
+\small{
+\textbf{Tools:} ADS, CST, Genesys, Spice, Altium Designer \\
+\textbf{Projects:} \href{https://www.gsatcom.com}{GSATCOM} flexible payload development\\
+}
+%\smallskip
+
+\divider
+
+\cvevent{\textbf{\href{http://www.fi.uba.ar}{University of Buenos Aires}}}{Electromagnetism Teaching Assistant}{Sep 2021 -- Aug 2022}{Buenos Aires City, Argentina}
+
+\small{
+\textbf{Topics:} Maxwell equations, Electrostatic, Magnetostatic, Electrodynamics, Microwaves, EMI/EMC, Transmission lines, Wave-guides, Antennas.\\
+}
+
+\divider
+
+\cvevent{\textbf{\href{https://www.allegromicro.com/}{Allegro Microsystems}}}{Modeling Engineer}{Aug 2018 -- Oct 2021}{Buenos Aires City, Argentina}
+\medskip
+\begin{itemize}
+    \item Characterization and modeling of semiconductor devices
+    \item Python scripting for visualization and data analysis
+    \item Flicker Noise setup development
+    \item Lab. experience: DC, RF, magnetic and noise measurements on wafer
+\end{itemize}
+\medskip
+\small{
+\textbf{Tools:} Python, Jupyter Notebook, Git, GitLab, Matlab, Cadence, Spectre \\
+\textbf{Technologies:} CMOS, HVCMOS, Bipolar, TMR/GMR, Hall Sensors \\
+}
+
+%\smallskip
+
+\divider
+
+\cvevent{\textbf{\href{https://csc.conicet.gov.ar/research/microwave-laboratory/}{CSC/CONICET RF Laboratory}}}{Professional Fellowship}{Oct 2016 -- Aug 2019}{Buenos Aires City, Argentina}
+\medskip
+\begin{itemize}
+    \item Design, implementation and characterization of an analog front-end for a general purpose UWB receiver
+    \item Microstrip-based filters and antennas design with special substrates
+    \item Lab. experience: Y-factor method, S2P and distortion measurements
+\end{itemize}
+\medskip
+\small{
+\textbf{Tools:} ADS, Genesys, Feko, Altium Designer, Matlab, Python}
+
+%\cvevent{\textbf{\href{http://www.biodiagnostico.com.ar/}{Biodiagnóstico S.A.}}}{Field Service Engineer}{Aug 2015 -- Jul 2018}{Buenos Aires City, Argentina}
+%\medskip
+%\begin{itemize}
+%    \item Repair and maintenance of clinical analysis instruments
+%    \item Client support of 5+ lines of instruments
+%    \item Certified courses in Argentina, Colombia, Chile, Italy and Uruguay
+%\end{itemize}
+%\medskip
+%\small{
+%\textbf{Technologies:} ELISA, ANA, IFA, HPLC, Real Time PCR \\
+%\textbf{Brands:} BioRad, Inova, ELITechGroup, Siemens, Beckman Coulter \\
+%\textbf{Key achievement:} Virtualization of old operative systems that don’t run in modern PCs. \\
+%}
+
+\end{document}
